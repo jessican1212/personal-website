@@ -12,6 +12,8 @@ body{
     height: 100vh;
     background: linear-gradient(#ffecf2,#f8f2ed, #afd8e4 40%);
     z-index: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
 #peoplebox{
@@ -623,6 +625,22 @@ body{
     }
 }
 
+@media screen and (max-width: 800px){
+    #sitting{
+        display: none;
+    }
+    #heart{
+        display: none;
+    }
+    #canelo{
+        display: none;
+    }
+    #hanging{
+        display: none;
+    }
+    
+}
+
 @media screen and (max-width: 780px){
     #bulbs{
         height: 200px;
@@ -665,5 +683,20 @@ body{
     #backtotop{
         font-size: 20px;
         top: 54vh;
+    }
+}
+
+@media screen and (max-width: 513px){
+    .underlines{
+        display: none;
+    }
+    #about{
+        display: none;
+    }
+    #projects{
+        display: none;
+    }
+    #contact{
+        display: none;
     }
 }
