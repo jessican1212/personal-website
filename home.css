@@ -233,18 +233,6 @@ body{
     padding: 20px;
 }
 
-#selfiegrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
-}
-
-.selfie{
-    height: 150px;
-    
-}
-
 #abouttext{
     font-size: 18px;
     font-family: "Jost";
@@ -320,12 +308,14 @@ body{
     background-color: #efcaad;
     font-family: "Inconsolata";
     font-weight: bolder;
+    font-size: 1.3vw;
 }
 
 .back{
     background-color: rgb(33, 33, 33);
     transform: rotateY(180deg);
     color: white;
+    font-size: 1vw;
 }
 
 .items:hover > .card{
@@ -613,4 +603,67 @@ body{
 @keyframes slide{
     0% {background-position-x: 0;}
     100% {background-position-x: -2050px;}
+}
+
+
+
+
+@media screen and (max-width: 980px){
+    #spotlight{
+        display: none;
+    }
+    .front{
+        font-size: 2.3vw;
+    }
+    .back{
+        font-size: 1.6vw;
+    }
+    .arrows{
+        top: 85vh;
+    }
+}
+
+@media screen and (max-width: 780px){
+    #bulbs{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #aboutbox{
+        width: 500px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 563px){
+    #bulbs{
+        height: 130px;
+    }
+    .slideshow{
+        display: none;
+    }
+    .sliding-background{
+        display: none;
+    }
+    #aboutbox{
+        width: 80vw;
+        font-size: 1vw;
+    }
+    #balloonline{
+        display: none;
+    }
+    #balloon{
+        display: none;
+    }
+    #mugshot{
+        height: 23vh;
+    }
+    #tiny-contacts{
+        font-size: 18px;
+    }
+    #backtotop{
+        font-size: 20px;
+        top: 54vh;
+    }
 }
