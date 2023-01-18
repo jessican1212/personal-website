@@ -8,11 +8,9 @@ body{
     text-align: center;
     justify-content: center;
     display: flex;
-    width: 100vw;
-    height: 100vh;
     background: linear-gradient(#ffecf2,#f8f2ed, #afd8e4 40%);
     z-index: 0;
-    height: 100vh;
+    height: 770px;
     width: 100vw;
 }
 
@@ -196,18 +194,10 @@ body{
     z-index:99;
 }
 
-#cityscape{
-    width: 100vw;
-    position: absolute;
-    bottom:0;
-    z-index: 1;
-    
-}
-
 #part2{
-    height: 100vh;
+    height: 770px;
     width: 100vw;
-    background: linear-gradient(hsl(295, 61%, 86%), #FFF9C4);
+    background: rgb(48, 50, 89);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,14 +207,14 @@ body{
 
 #bulbs{
     position: absolute;
-    top: 100vh;
-    height: 32vh;
+    top: 770px;
+    height: 250px;
     z-index:5;
 }
 
 #aboutbox{
-    position: relative;
-    top: 50px;
+    position: absolute;
+    top: 1080px;
     border: 1px solid black;
     height: auto;
     width: 650px;
@@ -241,16 +231,9 @@ body{
     padding-left: 20px;
 }
 
-#grass{
-    width: 100vw;
-    position: absolute;
-    bottom: -100vh;
-    z-index: 10;
-}
-
 #part3{
     width: 100vw;
-    height: 100vh;
+    height: 800px;
     background: rgb(68, 67, 67);
     display: flex;
     overflow: hidden;
@@ -258,13 +241,13 @@ body{
 
 #spotlight{
     position: relative;
-    height: 100vh;
-    margin-left: 2vw;
+    height: 800px;
+    margin-left: 10px;
 }
 
 #projscontainer{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-color: rgb(68, 67, 67);
     display: flex;
     justify-content: center;
@@ -433,35 +416,32 @@ body{
   }
 
 #part4{
-    height: 100vh;
+    height: 800px;
     width: 100vw;
     display: flex;
     justify-content: center;
     overflow: hidden;
-}
-
-#berk{
-    height: 40vh;
-    width: 6000px;
+    flex-direction: column;
 }
 
 #poplarcover{
-    height: 40vh;
+    background-image: url(./figma-images/flowers.png);
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    height: 500px;
     width: 100vw;
-    position: absolute;
     background-color: black;
-    top: 300vh;
-    opacity: 0.45;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    opacity: 0.7;
 }
 
 .poplartext{
     opacity: 1;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bolder;
     font-size: 40px;
     margin: 0;
@@ -469,17 +449,15 @@ body{
 
 #contacts-container{
     background-color: rgb(33, 33, 33);
-    height: 60vh;
+    height: 500px;
     width: 100vw;
-    position: absolute;
-    top: 340vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #mugshot{
-    height: 40vh;
+    height: 300px;
     width: auto;
     border-radius: 5px;
 }
@@ -489,8 +467,8 @@ body{
     font-family: "Jost";
     background-color: rgb(33, 33, 33);
     width: auto;
-    height: 40vh;
-    padding-left: 3vw;
+    height: 500px;
+    padding-left: 25px;
     font-size: 24px;
     display: flex;
     align-items: center;
@@ -523,8 +501,8 @@ body{
 
 #backtotop{
     position: absolute;
-    top: 52vh;
-    right: 1vw;
+    top: 3080px;
+    right: 10px;
     width: auto;
     height: auto;
     background-color: #ed7f2b;
@@ -537,6 +515,7 @@ body{
     padding-left: 7px;
     padding-right:7px;
     transition: all 0.2s;
+    z-index: 10;
 }
 
 #backtotop:hover {
@@ -546,8 +525,7 @@ body{
 
 .arrows{
     position: absolute;
-    top: 80vh;
-    left: 50vw;
+    top: 680px;
     width: 40px;
     height: 40px;
 }
@@ -568,7 +546,7 @@ body{
 
 @keyframes scrolldown {
     0%{
-        opacity: 0;
+        opacity: 1;
     }
 
     30%{
@@ -584,6 +562,14 @@ body{
         opacity: 0;
         transform: translate(0, 26px);
     }
+}
+
+#part1divider{
+    width: 100vw;
+    height: 10px;
+    background-color:rgb(31, 31, 31);
+    position:absolute;
+    top: 770px;
 }
 
 .slideshow {
@@ -608,8 +594,6 @@ body{
 }
 
 
-
-
 @media screen and (max-width: 980px){
     #spotlight{
         display: none;
@@ -619,9 +603,6 @@ body{
     }
     .back{
         font-size: 1.6vw;
-    }
-    .arrows{
-        top: 85vh;
     }
 }
 
@@ -654,10 +635,7 @@ body{
     }
 }
 
-@media screen and (max-width: 563px){
-    #bulbs{
-        height: 130px;
-    }
+@media screen and (max-width: 583px){
     .slideshow{
         display: none;
     }
@@ -681,8 +659,10 @@ body{
         font-size: 18px;
     }
     #backtotop{
-        font-size: 20px;
-        top: 54vh;
+        display: none;
+    }
+    #bulbs{
+        height: 130px;
     }
 }
 
@@ -698,5 +678,14 @@ body{
     }
     #contact{
         display: none;
+    }
+}
+
+@media screen and (max-width: 375px){
+    #bulbs{
+        display: none;
+    }
+    #aboutbox{
+        top: 900px;
     }
 }
