@@ -10,8 +10,9 @@
   </head>
   <body>
     <div id="part1"> <!--HOME PAGE-->
-      <div id="balloonline"></div>
-      <img id="balloon" src="./figma-images/balloon.svg">
+      <div id="blackdiv">
+        <div id="scroller"></div>
+      </div>
         <a id="about" href="#part2">About</a>
         <a id="projects" href="#part3">Projects</a>
         <a id="contact" href="#part4">Contact</a>
@@ -23,32 +24,27 @@
                 <h1 id="sunmoon">☀</h1>
             </div>
         </div>
-      <div id="peoplebox">
-        <img id="sitting" src="./figma-images/sitting.svg">
-        <h1 id="hi"><strong>HI, I'M JESSICA!</strong></h1>
-        <h2 id="divider">· · ─────── ·𖥸· ─────── · ·</h2>
-        <p id="please">scroll down to view my entire website!</p>
-        <h1 class= "leftgraphics" id="heart">♥</h1>
-        <img class= "leftgraphics" id="canelo" src="./figma-images/doggy.svg">
-        <img id="hanging" src="./figma-images/hanging2.svg">
-      </div>
+      <img id="main" src="./figma-images/main.svg">
       <img class="arrows" id="arrow" src="./figma-images/down-arrow.png">
       <img class="arrows" id="arrow2" src="./figma-images/down-arrow.png">
       <img class="arrows" id="arrow3" src="./figma-images/down-arrow.png">
       <div id="part1divider"></div>
     </div>
     <div id="part2"> <!--ABOUT ME-->
-      <img id="bulbs" src="./figma-images/bulbs.svg">
       <div id="aboutbox">
         <div class="slideshow">
           <div class="sliding-background"></div>
       </div>
-          
-        <p id="abouttext">I am an intended Computer Science major (Class of 2026) at the University of California, Berkeley. Go bears! 🐻 I've lived in the Bay Area my entire life, and I began coding in high school. In college, I discovered my interests in cognitive science and web design. In my free time, I like to read sci-fi novels and memoirs 📚, play board games 🎲, listen to kpop 🎶, and mess around with my web and graphic design skills! 🎨</p>
+        <div id="nexttoslideshow">
+          <h1 id="aboutme">ABOUT ME</h1>
+          <p id="abouttext">I am an intended Computer Science major (Class of 2026) at the University of California, Berkeley. Go bears! 🐻 I've lived in the Bay Area my entire life, and I began coding in high school. In college, I discovered my interests in cognitive science and web design. In my free time, I like to read sci-fi novels and memoirs 📚, play board games 🎲, listen to kpop 🎶, and mess around with my web and graphic design skills! 🎨 </p>
+        </div>
       </div>
     </div>
+    <div id="projtitlecontainer">
+      <h1 id="projtitle">Projects & Achievements</h1>
+    </div>
     <div id="part3"> <!--PROJECTS-->
-      <img id="spotlight" src="./figma-images/spotlight.svg">
       <div id="projscontainer">
         <div class="projswrapper">
 
@@ -133,7 +129,6 @@
           <h5><em>email: </em> jessica_n@berkeley.edu</h5>
           <a id="resume" href="https://github.com/jessican1212/resume/blob/main/Master_Resume.pdf">resume</a>
         </div>
-        <a id="backtotop" href="#part1">⬆</a>
       </div>
     </div>
 	<script src="home.js"></script>

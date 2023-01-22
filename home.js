@@ -1,7 +1,7 @@
 function darkModeFunc() {
-    var e = document.getElementById("hi");
-    var c = window.getComputedStyle(e).color;
-    if (c === "rgb(3, 58, 91)"){
+    var e = document.getElementById("part1");
+    var c = window.getComputedStyle(e).backgroundColor;
+    if (c === "rgb(210, 148, 175)"){
         //dark mode
         console.log("entered dark mode");
         //button
@@ -10,8 +10,13 @@ function darkModeFunc() {
         document.getElementById("sunmoon").style.top="0px";
         document.getElementById("sunmoon").style.fontSize="28px";
         //others
-        document.getElementById("part1").style.background = "linear-gradient(#f5ad92, #c67486,#765e8d, #00577F 40%)";
-        document.getElementById('hi').style.color = "rgb(3, 58, 90)";   
+        document.getElementById("part1").style.background = "#4a6274";
+        document.getElementById("about").style.color = "#D3D3D3";
+        document.getElementById("contact").style.color = "#D3D3D3";
+        document.getElementById("projects").style.color = "#D3D3D3";
+        document.getElementById("one").style.background = "#D3D3D3";
+        document.getElementById("two").style.background = "#D3D3D3";
+        document.getElementById("three").style.backgroud = "#D3D3D3";
     }
     
     else{
@@ -23,8 +28,13 @@ function darkModeFunc() {
         document.getElementById("sunmoon").style.top="-2px";
         document.getElementById("sunmoon").style.fontSize="24px";
         //others
-        document.getElementById("part1").style.background = "linear-gradient(#ffecf2,#f8f2ed, #afd8e4 40%)";
-        document.getElementById('hi').style.color = "#033a5b";
+        document.getElementById("part1").style.background = "rgb(210, 148, 175)";
+        document.getElementById("about").style.color = "#033a5b";
+        document.getElementById("contact").style.color = "#033a5b";
+        document.getElementById("projects").style.color = "#033a5b";
+        document.getElementById("one").style.background = "#033a5b";
+        document.getElementById("two").style.background = "#033a5b";
+        document.getElementById("three").style.backgroud = "#033a5b";
     }
 }
 
