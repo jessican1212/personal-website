@@ -40,14 +40,14 @@ body{
     animation-fill-mode: both;
 }
   
-  @keyframes move-right {
+@keyframes move-right {
     to {
       transform: translate(calc(100vw - 150px), 0);
     }
-  }
+}
 
 #main{
-    width: 65vw;
+    height: 60vh;
 }
 
 #about{
@@ -214,26 +214,41 @@ body{
 
 #aboutbox{
     height: auto;
-    width: 650px;
+    width: 750px;
     border-radius: 5px;
     background-color: #0b3243;
     display: flex;
     align-items: center;
 }
 
+#balloon{
+    height: 60px;
+    position: relative;
+    left: 346px;
+    top: -117px;
+    animation: bob 3s ease-in-out infinite;
+}
+
+@keyframes bob{
+    0%{transform: translate(0,0); }
+    50%{transform: translate(0,7px);}
+    100%{transform: translate(0,0);}
+}
+
 #aboutme{
-    font-size: 40px;
+    font-size: 50px;
     font-family: "Jost";
-    padding-left: 100px;
+    padding-left: 50px;
     color: #D294af;
     font-weight: bolder;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 #abouttext{
-    font-size: 15px;
+    font-size: 17px;
     font-family: "Jost";
-    padding-left: 100px;
+    padding-left: 50px;
     margin:0;
     color: white;
 }
@@ -241,7 +256,6 @@ body{
 #part3{
     width: 100vw;
     height: 700px;
-    background: #D294af;
     display: flex;
     overflow: hidden;
 }
@@ -249,7 +263,7 @@ body{
 #projtitlecontainer{
     height: auto;
     width: 100vw;
-    background-color: #D294af;
+    background-color: #e2725a;
     text-align: center;
 }
 
@@ -268,7 +282,7 @@ body{
 #projscontainer{
     width: 100vw;
     height: auto;
-    background-color: #D294af;
+    background-color: #e2725a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -277,7 +291,7 @@ body{
 .projswrapper{
     width: 50%;
     height: 90%;
-    background-color: #D294af;
+    background-color: #e2725a;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -313,14 +327,14 @@ body{
     background-color: #efcaad;
     font-family: "Inconsolata";
     font-weight: bolder;
-    font-size: 1.3vw;
+    font-size: 22px;
 }
 
 .back{
     background-color: rgb(33, 33, 33);
     transform: rotateY(180deg);
     color: white;
-    font-size: 1vw;
+    font-size: 15px;
 }
 
 .items:hover > .card{
@@ -396,8 +410,9 @@ body{
 }
 
 .backtext{
-    margin: 20px;
-    margin-bottom:0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .linkicon{
@@ -405,73 +420,31 @@ body{
 }
 
 #part4{
-    height: 800px;
+    height: auto;
     width: 100vw;
     display: flex;
-    justify-content: center;
-    overflow: hidden;
-    flex-direction: column;
-}
-
-#poplarcover{
-    overflow: hidden;
-    background-image: url(./figma-images/chev.png);
-    background-size: 100vw 400px;
-    background-attachment: fixed;
-    height: 500px;
-    width: 100vw;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     text-align: center;
-    opacity: 1;
-}
-
-.poplartext{
-    opacity: 1;
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
-    font-size: 40px;
-    margin: 0;
-}
-
-#contacts-container{
-    background-color: rgb(33, 33, 33);
-    height: 500px;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#mugshot{
-    height: 300px;
-    width: auto;
-    border-radius: 5px;
-}
-
-#tiny-contacts{
-    color: white;
-    font-family: "Jost";
-    background-color: rgb(33, 33, 33);
-    width: auto;
-    height: 500px;
-    padding-left: 25px;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
+    place-items: center;
     flex-direction: column;
+    background-color: #4a6274;
+    padding-top: 5vh;
+    padding-bottom: 7vh;
 }
+
+#contactpic{
+    height: 55vh;
+}
+
 
 #resume {
+    padding-top: 6px;
     width: 130px;
     height: 30px;
     border: none;
     cursor: pointer;
-    background-color: #ffd1c3;
+    background-color: #fdd8d6;
     box-shadow: 0 6px #545454;
     border-radius: 40px;
     -webkit-transition: all 0.3s;
@@ -485,8 +458,8 @@ body{
 
 
 #resume:hover {
-	box-shadow: 0 4px #352e27;
-	transform: translate(0, 5px);
+	box-shadow: 0 2px #352e27;
+	transform: translate(0, 7px);
 }
 
 .arrows{
