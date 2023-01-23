@@ -1,7 +1,16 @@
+var welcomescreen = document.querySelectorAll(".welcomescreens")[0];
+
+function destruct(){
+  console.log("entered destruct function");
+  setTimeout(function () {
+    welcomescreen.parentNode.removeChild(welcomescreen);
+}, 2000);
+}
+
 function darkModeFunc() {
     var e = document.getElementById("part1");
     var c = window.getComputedStyle(e).backgroundColor;
-    if (c === "rgb(210, 148, 175)"){
+    if (c === "rgb(232, 130, 174)"){
         //dark mode
         console.log("entered dark mode");
         //button
@@ -17,6 +26,7 @@ function darkModeFunc() {
         document.getElementById("one").style.background = "#D3D3D3";
         document.getElementById("two").style.background = "#D3D3D3";
         document.getElementById("three").style.backgroud = "#D3D3D3";
+        document.getElementById("aboutme").style.color = "#87ceeb";
     }
     
     else{
@@ -28,13 +38,14 @@ function darkModeFunc() {
         document.getElementById("sunmoon").style.top="-2px";
         document.getElementById("sunmoon").style.fontSize="24px";
         //others
-        document.getElementById("part1").style.background = "rgb(210, 148, 175)";
+        document.getElementById("part1").style.background = "#e882ae";
         document.getElementById("about").style.color = "#033a5b";
         document.getElementById("contact").style.color = "#033a5b";
         document.getElementById("projects").style.color = "#033a5b";
         document.getElementById("one").style.background = "#033a5b";
         document.getElementById("two").style.background = "#033a5b";
         document.getElementById("three").style.backgroud = "#033a5b";
+        document.getElementById("aboutme").style.color = "#e882ae";
     }
 }
 

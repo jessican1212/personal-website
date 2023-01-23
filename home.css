@@ -4,13 +4,52 @@ body{
     margin:0;
 }
 
+#welcomescreen{
+    position: absolute;
+    height: 100vh;
+    width: 200vw;
+    float: left;
+    opacity: 0;
+    background-color: #000000;
+    animation: skinny 2s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 106;
+}
+
+@keyframes skinny {
+    0%{opacity: 1; width: 100vw;}
+    75%{opacity: 1; width: 100vw;}
+    100%{width: 0vw; opacity: 0;}
+}
+
+#spinnylogo{
+    height: 300px;
+    opacity: 0;
+    animation: spinfade 2s linear;
+}
+
+#initialslogo{
+    height: 200px;
+    position: absolute;
+    top: calc(50vh - 110px);
+}
+
+@keyframes spinfade {
+    0%{opacity: 1;}
+    75%{opacity: 1;}
+    100%{opacity: 0; transform: rotate(60deg);}
+}
+
 #part1{
     display: flex;
     text-align: center;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    background: #D294af;
+    background: #e882ae;
     z-index: 0;
     height: 100vh;
     width: 100vw;
@@ -32,7 +71,6 @@ body{
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 101;
     animation: move-right 1s linear infinite;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
@@ -48,6 +86,13 @@ body{
 
 #main{
     height: 60vh;
+    animation: fade-in 2.5s ease;
+}
+
+@keyframes fade-in {
+    0%{opacity: 0;}
+    75%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 #about{
@@ -59,6 +104,7 @@ body{
     font-family: 'Inconsolata';
     font-weight: 400;
     font-size: 22px;
+    animation: fade-in 2.5s ease;
 }
 
 #projects{
@@ -70,6 +116,7 @@ body{
     font-family: 'Inconsolata';
     font-weight: 400;
     font-size: 22px;
+    animation: fade-in 2.5s ease;
 }
 
 #contact{
@@ -81,6 +128,7 @@ body{
     font-family: 'Inconsolata';
     font-weight: 400;
     font-size: 22px;
+    animation: fade-in 2.5s ease;
 }
 
 .underlines{
@@ -138,6 +186,7 @@ body{
     color: #393939;
     font-size: 2em;
     z-index:105;
+    animation: fade-in 2.5s ease;
 }
 
 #innerdarkmode{
@@ -160,45 +209,6 @@ body{
     padding-left: 3px;
     font-size: 24px;
     color: white;
-}
-
-#sitting{
-    height: 110px;
-    position: absolute;
-    top: -83px;
-    left: 12vw;
-}
-
-#heart{
-    color: rgb(255, 0, 102);
-    font-size: 18px;
-    z-index: 99;
-    height: 90px;
-    position: absolute;
-    top: 251px;
-    left: 53px;
-    animation: thump 1.5s ease-in-out infinite;
-}
-
-@keyframes thump {
-    0%{font-size:18px;}
-    50%{font-size:20px;}
-    100%{font-size:18px;}
-}
-
-#canelo{
-    height: 90px;
-    position: absolute;
-    top: 250.8px;
-    left: -1px;
-}
-
-#hanging{
-    height: 140px;
-    position: absolute;
-    top: 334.5px;
-    right: 2vw;
-    z-index:99;
 }
 
 #part2{
@@ -239,7 +249,7 @@ body{
     font-size: 50px;
     font-family: "Jost";
     padding-left: 50px;
-    color: #D294af;
+    color: #e882ae;
     font-weight: bolder;
     margin-bottom: 0px;
     margin-top: 0px;
