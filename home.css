@@ -27,8 +27,8 @@ body{
 
 #spinnylogo{
     height: 300px;
-    opacity: 0;
-    animation: spinfade 2s linear;
+    opacity: 1;
+    animation: spin 10s linear infinite;
 }
 
 #initialslogo{
@@ -37,10 +37,8 @@ body{
     top: calc(50vh - 110px);
 }
 
-@keyframes spinfade {
-    0%{opacity: 1;}
-    75%{opacity: 1;}
-    100%{opacity: 0; transform: rotate(60deg);}
+@keyframes spin {
+    100%{transform: rotate(365deg);}
 }
 
 #part1{
@@ -173,6 +171,31 @@ body{
     width: 79px;
 }
 
+#logobackground{
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 15px;
+    left: calc(50vw - 35px);
+    background-color: #033a5b;
+}
+
+#spinnylogo2{
+    width: 80px;
+    position:absolute;
+    top: 10px;
+    left: calc(50vw - 40px);
+    animation: spin 10s linear infinite;
+}
+
+#initialslogo2{
+    width: 30px;
+    position: absolute;
+    top: 16px;
+    left: calc(50vw - 15px);
+}
+
 #outerdarkmode{
     position: absolute;
     top: 3.5vh;
@@ -231,14 +254,6 @@ body{
     align-items: center;
 }
 
-#balloon{
-    height: 60px;
-    position: relative;
-    left: 346px;
-    top: -117px;
-    animation: bob 3s ease-in-out infinite;
-}
-
 @keyframes bob{
     0%{transform: translate(0,0); }
     50%{transform: translate(0,7px);}
@@ -249,6 +264,7 @@ body{
     font-size: 50px;
     font-family: "Jost";
     padding-left: 50px;
+    padding-right: 5vw;
     color: #e882ae;
     font-weight: bolder;
     margin-bottom: 0px;
@@ -533,12 +549,40 @@ body{
 }
 
 
-@media screen and (max-width: 980px){
-    .front{
-        font-size: 2.3vw;
+@media screen and (max-width: 1250px){
+    .projswrapper{
+        width: 60%;
     }
-    .back{
-        font-size: 1.6vw;
+}
+
+@media screen and (max-width: 1000px){
+    #main{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .projswrapper{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .projswrapper{
+        width: 90%;
+    }
+    #projtitle{
+        position: static;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #aboutbox{
+        width: 95vw;
+    }
+    #aboutme{
+        padding-left: 5vw;
     }
 }
 
@@ -549,14 +593,17 @@ body{
     .sliding-background{
         display: none;
     }
-    #mugshot{
-        height: 23vh;
-    }
     #tiny-contacts{
         font-size: 18px;
     }
-    #backtotop{
-        display: none;
+    #contactpic{
+        width: 95vw;
+    }
+    .front{
+        font-size: 3vw;
+    }
+    .back{
+        font-size: 3vw;
     }
 }
 
@@ -573,4 +620,14 @@ body{
     #contact{
         display: none;
     }
+}
+
+@media screen and (max-width: 420px){
+    #main{
+        width: 126vw;
+    }
+    #part1{
+        overflow: hidden;
+    }
+    
 }

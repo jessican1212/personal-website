@@ -4,7 +4,7 @@ function destruct(){
   console.log("entered destruct function");
   setTimeout(function () {
     welcomescreen.parentNode.removeChild(welcomescreen);
-}, 2000);
+}, 1900);
 }
 
 function darkModeFunc() {
