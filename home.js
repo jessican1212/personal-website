@@ -1,12 +1,3 @@
-var welcomescreen = document.querySelectorAll(".welcomescreens")[0];
-
-function destruct(){
-  console.log("entered destruct function");
-  setTimeout(function () {
-    welcomescreen.parentNode.removeChild(welcomescreen);
-}, 1900);
-}
-
 function darkModeFunc() {
     var e = document.getElementById("part1");
     var c = window.getComputedStyle(e).backgroundColor;
