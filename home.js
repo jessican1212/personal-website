@@ -1,7 +1,7 @@
 function darkModeFunc() {
     var e = document.getElementById("part1");
     var c = window.getComputedStyle(e).backgroundColor;
-    if (c === "rgb(232, 130, 174)"){
+    if (c === "rgb(250, 235, 215)"){
         //dark mode
         console.log("entered dark mode");
         //button
@@ -29,14 +29,14 @@ function darkModeFunc() {
         document.getElementById("sunmoon").style.top="-2px";
         document.getElementById("sunmoon").style.fontSize="24px";
         //others
-        document.getElementById("part1").style.background = "#e882ae";
+        document.getElementById("part1").style.background = "#faebd7";
         document.getElementById("about").style.color = "#033a5b";
         document.getElementById("contact").style.color = "#033a5b";
         document.getElementById("projects").style.color = "#033a5b";
         document.getElementById("one").style.background = "#033a5b";
         document.getElementById("two").style.background = "#033a5b";
         document.getElementById("three").style.backgroud = "#033a5b";
-        document.getElementById("aboutme").style.color = "#e882ae";
+        document.getElementById("aboutme").style.color = "#faebd7";
     }
 }
 
